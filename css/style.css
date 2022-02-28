@@ -32,6 +32,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -49,9 +52,17 @@ body {
   background-color: var(--color-grey-light-2);
   box-shadow: var(--custom-box-shadow);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .header {
   background-color: #fff;
@@ -61,6 +72,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 11rem; } }
 
 .logo {
   height: 3.5rem;
@@ -71,6 +87,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: var(--color-grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -154,10 +175,18 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      display: flex;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1;
+        margin-bottom: 0; } }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -183,17 +212,34 @@ body {
     display: flex;
     align-items: center;
     z-index: 2; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem .5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0;
+        margin-bottom: .7rem; } }
 
 .legal {
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem;
   color: var(--color-grey-dark-4); }
+  @media only screen and (max-width: 56.25em) {
+    .legal {
+      display: none; } }
 
 .btn-inline {
   border: none;
@@ -252,6 +298,9 @@ body {
 .cta {
   padding: 3.5rem;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem; } }
   .cta__book-now {
     text-transform: uppercase;
     font-size: 2rem;
@@ -274,6 +323,10 @@ body {
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -297,13 +350,22 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__ratings {
+        padding: 0 1.25rem; } }
     .overview__ratings--average {
       font-size: 2.25rem;
       font-weight: 300;
       margin-bottom: -3px; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__ratings--average {
+          font-size: 1.8rem; } }
     .overview__ratings--count {
       font-size: .8rem;
       text-transform: uppercase; }
+      @media only screen and (max-width: 37.5em) {
+        .overview__ratings--count {
+          font-size: .5rem; } }
 
 .review {
   background-color: #fff;
@@ -312,6 +374,10 @@ body {
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 2.5rem; } }
   .review__text {
     margin-bottom: 2rem; }
   .review__user {
@@ -353,6 +419,12 @@ body {
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: 1px solid var(--color-grey-light-2); }
+  @media only screen and (max-width: 56.25em) {
+    .detail {
+      padding: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   font-size: 1.4rem;
@@ -361,8 +433,18 @@ body {
   margin-right: 4.5rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 3rem; }
+  @media only screen and (max-width) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
+  @media only screen and (max-width) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
   .description .paragraph:not(:last-of-type) {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    padding: 2rem;
+    margin-right: 2.5rem; }
   .description .list {
     margin: 3rem 0;
     list-style: none;
@@ -392,6 +474,8 @@ body {
     align-items: center; }
     .description .recommend__count {
       margin-right: auto; }
+    .description .recommend__friends {
+      display: flex; }
     .description .recommend__photo {
       box-sizing: content-box;
       height: 4rem;
@@ -399,7 +483,7 @@ body {
       border-radius: 50%;
       border: 3px solid #fff; }
       .description .recommend__photo:not(:last-child) {
-        margin-right: -1.5rem; }
+        margin-right: -2rem; }
 
 .user-reviews {
   flex: 0 0 1;

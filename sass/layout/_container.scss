@@ -5,4 +5,10 @@
     box-shadow: var(--custom-box-shadow);
 
     min-height: 50rem;
+
+    @media only screen and (max-width:$bp-largest){
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
 }

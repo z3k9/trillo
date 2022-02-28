@@ -12,5 +12,13 @@
     --color-grey-dark-2 : #777;
     --color-grey-dark-3 : #999;
 
-    --custom-box-shadow : 0 2rem 6rem rgba(0,0,0, 0.3); 
+    --custom-box-shadow : 0 2rem 6rem rgba(0,0,0, 0.3);
+    
 }
+
+
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
